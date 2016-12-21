@@ -34,12 +34,13 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/components-rounded.css" rel="stylesheet" type="text/css" id="style_components"/>
+        <!--<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />-->
         <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="cetasleaf.png" /> </head>
@@ -207,9 +208,8 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                             <button type="button" class="btn btn-primary">Search</button>
                             <hr>
-                            if found
                             <div class="col-md-12">
-                              <div class="portlet box blue-dark">
+                              <div class="portlet box blue">
                         <!-- Begin search results-->
                                 <div class="portlet-title">
                                     <div class="caption">
@@ -281,46 +281,45 @@ License: You must have a valid license purchased only from themeforest(the above
                                               <h4 class="modal-title">Add new document</h4>
                                           </div>
                                           <div class="modal-body">
-                                              <div class="scroller" style="height:500px" data-always-visible="1" data-rail-visible1="1">
-                                                      <div class="col-md-12">
-                                                            <div class="col-md-8" style="padding:0px 0px 20px 40px;">
-                                                              <span>Document Type</span>
-                                                                  <select class="bs-select form-control">
-                                                                      <option>Aadhaar</option>
-                                                                      <option>Permanent Account Number</option>
-                                                                      <option>Passport</option>
-                                                                  </select>
-                                                            </div>
-                                                            <br/>
-                                                            <div class="col-md-8" style="padding:0px 0px 20px 40px;">
-                                                                  <input type="text" class="form-control input-large" placeholder="Document ID">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-8" style="padding:0px 0px 20px 40px;">
-                                                                    <input class="form-control form-control-inline input-medium date-picker" size="16" type="text" value="" />
+                                                        <div class="scroller" style="height:520px;" data-always-visible="1" data-rail-visible1="1">
+                                                                <div class="col-md-12">
+                                                                      <div class="col-md-6" style="padding:0px 0px 5px 105px;">
+                                                                        <span class="help-block">Document Type</span>
+                                                                            <select class="bs-select form-control" style="width: 320px">
+                                                                                <option>Aadhaar</option>
+                                                                                <option>Permanent Account Number</option>
+                                                                                <option>Passport</option>
+                                                                            </select>
+                                                                      </div>
+                                                                </div>
+                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
+                                                                      <span class="help-block"> Document Id </span>
+                                                                      <input type="text" class="form-control input-large" placeholder="Document ID">
+                                                                </div>
+                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
+                                                                    <span class="help-block"> Valid since </span>
+                                                                    <input class="form-control form-control-inline input-large date-picker" size="12" type="text" value="" />
+                                                                </div>
+                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
                                                                     <span class="help-block"> Valid upto </span>
+                                                                    <input class="form-control form-control-inline input-large date-picker" size="12" type="text" value="" />
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-8" style="padding:0px 0px 20px 40px;">
-                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 320px; height: 120px;"> </div>
-                                                                    <div>
-                                                                        <span class="btn blue btn-outline btn-file">
-                                                                            <span class="fileinput-new"> Select image </span>
-                                                                            <!--<span class="fileinput-exists"> Change </span>-->
-                                                                            <input type="file" name="..."> </span>
-                                                                        <a href="javascript:;" class="btn blue fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                                                    </div>
+                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
+                                                                      <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                      <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 320px; height: 150px;"> </div>
+                                                                          <span class="btn blue btn-file">
+                                                                              <span class="fileinput-new"> Select file </span>
+                                                                              <span class="fileinput-exists"> Change </span>
+                                                                              <input type="file" name="..."> </span>
+                                                                          <span class="fileinput-filename"> </span> &nbsp;
+                                                                          <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
+                                                                      </div>
                                                                 </div>
-                                                            </div>
-
-                                                      </div>
-
-                                              </div>
+                                            </div>
                                           </div>
                                           <div class="modal-footer">
                                               <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>
-                                              <button type="button" class="btn green">Save changes</button>
+                                              <button type="button" class="btn btn-primary">Add Document</button>
                                           </div>
                                       </div>
                                   </div>
@@ -329,10 +328,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                           </div>
                         </div>
-
-
                      </div>
-
                     </div>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
