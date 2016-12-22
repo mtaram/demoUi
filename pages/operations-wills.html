@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 4.5.6
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cetas - AIA PoC</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="./assets/global/css/components-md.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="./assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="./assets/layouts/layout3/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/layouts/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="./assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+<body class="page-container-bg-solid page-md">
+    <!-- BEGIN HEADER -->
+    <div class="page-header">
+        <!-- BEGIN HEADER TOP -->
+        <div class="page-header-top">
+            <div class="container">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="./assets/aia-logo.png" alt="logo" height='70%' class="logo-default">
+                    </a>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler"></a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="droddown dropdown-separator">
+                            <span class="separator"></span>
+                        </li>
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <li class=" dropdown-user dropdown-dark">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <span class="username username-hide-mobile" id="username"></span>
+                            </a>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                        <li class=" dropdown-user dropdown-dark" id="header_task_bar">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" id="logout" data-close-others="true">
+                                <i class="icon-logout"></i>
+                            </a>
+                        </li>
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+        </div>
+        <!-- END HEADER TOP -->
+        <!-- BEGIN HEADER MENU -->
+        <div class="page-header-menu">
+            <div class="container">
+                <!-- BEGIN MEGA MENU -->
+                <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+                <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+                <div class="hor-menu  ">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-dropdown classic-menu-dropdown">
+                            <a href="index.html"> Dashboard
+                                    <span class="arrow"></span>
+                                </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="menu-dropdown classic-menu-dropdown active">
+                            <a href="operations-kyc.html"> Use - Case
+                                  <span class="arrow"></span>
+                                </a>
+                            <ul class="dropdown-menu pull-left active">
+                                <li class=" ">
+                                    <a href="operations-kyc.html" class="nav-link">
+                                        <i class="icon-bar-chart"></i> KYC
+                                    </a>
+                                </li>
+                                <li class=" ">
+                                    <a href="operations-wills.html" class="nav-link active">
+                                        <i class="icon-bar-chart"></i> Automated Will Execution
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="menu-dropdown classic-menu-dropdown">
+                            <a href="consortia-overview.html"> Consortia Management
+                                  <span class="arrow"></span>
+                                </a>
+                            <ul class="dropdown-menu pull-left">
+                                <li class=" active">
+                                    <a href="consortia-overview.html" class="nav-link ">
+                                        <i class="icon-bar-chart"></i> Overview
+                                    </a>
+                                </li>
+                                <li class=" ">
+                                    <a href="consortia-sop.html" class="nav-link">
+                                        <i class="icon-bulb"></i> Consortia Management </a>
+                                </li>
+                                <li class=" ">
+                                    <a href="consortia-Setting.html" class="nav-link  ">
+                                        <i class="icon-graph"></i> Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- END MEGA MENU -->
+            </div>
+        </div>
+        <!-- END HEADER MENU -->
+    </div>
+    <!-- END HEADER -->
+
+    <!-- MODAL Asset -->
+    <div class="modal fade" id="modaladdasset" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Add new asset</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input type="text" class="form-control edited" id='willassetaddname'>
+                                <label for="form_control_1">Asset name</label>
+                                <span class="help-block">Type the name of the asset</span>
+                            </div>
+                            <br>
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input type="text" class="form-control edited" id="willassetadddetails">
+                                <label for="form_control_1">Asset detail</label>
+                                <span class="help-block">Relevant details of the asset</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-circle green btn-outline" data-dismiss="modal" id="willassetaddsubmit">Submit</button>
+                    <button type="button" class="btn btn-circle red btn-outline" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- MODAL ASSET -->
+
+    <!-- MODAL BENE -->
+    <div class="modal fade" id="modaladdbene" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Add new beneficiary</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input type="text" class="form-control edited" id='willbeneaddaddr'>
+                                <label for="form_control_1">Beneficiary name</label>
+                                <span class="help-block">Type the beneficiary's name</span>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                              <div class="col-md-6">
+                                  <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                      <select class="form-control edited globalidentiyselect" id="willsearchidentity">
+                                          <option value="" selected>Social security number</option>
+                                          <option value="" >Income tax number</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <!--/span-->
+                              <div class="col-md-6">
+                                  <div class="form-group form-md-line-input form-md-floating-label">
+                                      <input type="text" class="form-control" id="willsearchid">
+                                      <label for="form_control_1">Id number</label>
+                                      <span class="help-block">Enter relevant id</span>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-circle green btn-outline" data-dismiss="modal" id="willbeneaddsubmit">Submit</button>
+                    <button type="button" class="btn btn-circle red btn-outline" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- MODAL BENE -->
+    <!-- MODAL ALOC -->
+    <div class="modal fade" id="" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Allocate an asset</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                <select class="form-control edited willlistasset" id="willallocasset">
+                                    <option value="" selected=""></option>
+                                    <option value="1" selected="">3bhk appartments</option>
+                                    <option value="2">$10,000 bonds</option>
+                                </select>
+                                <label for="form_control_1">List of asset(s)</label>
+                            </div>
+                            <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                <select class="form-control edited willlistbene" id="willbeneasset">
+                                    <option value="" selected=""></option>
+                                    <option value="1" >Utkarsh</option>
+                                    <option value="2">Juzer</option>
+                                </select>
+                                <label for="form_control_1">List of beneficiaries</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-circle green btn-outline" data-dismiss="modal" id="willallocaddsubmit">Submit</button>
+                    <button type="button" class="btn btn-circle red btn-outline" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- dialbox over -->
+
+<!-- submit-will-modal -->
+<div class="modal fade" id="modaladdalloc" tabindex="-1" role="basic" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">Add new wittness</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-body">
+                        <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control edited" id='willbeneaddaddr'>
+                            <label for="form_control_1">Wittness name</label>
+                            <span class="help-block">Type the wittness's name</span>
+                        </div>
+                        <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control edited" id=''>
+                            <label for="form_control_1">Wittness email-id</label>
+                            <span class="help-block">Type the wittness's email-id</span>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="col-md-6">
+                              <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                  <select class="form-control edited globalidentiyselect" id="willsearchidentity">
+                                      <option value="" selected>Social security number</option>
+                                      <option value="" >Income tax number</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <!--/span-->
+                          <div class="col-md-6">
+                              <div class="form-group form-md-line-input form-md-floating-label">
+                                  <input type="text" class="form-control" id="willsearchid">
+                                  <label for="form_control_1">Id number</label>
+                                  <span class="help-block">Enter relevant id</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control edited" id=''>
+                            <label for="form_control_1">One time password</label>
+                            <span class="help-block">Enter OTP to confirm</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circle green btn-outline" data-dismiss="modal" id="willbeneaddsubmit">Submit</button>
+                <button type="button" class="btn btn-circle red btn-outline" data-dismiss="modal">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <!-- BEGIN PAGE HEAD-->
+            <div class="page-head">
+            </div>
+            <!-- END PAGE HEAD-->
+            <!-- BEGIN PAGE CONTENT BODY -->
+            <div class="page-content">
+                <div class="container">
+                    <!-- BEGIN PAGE BREADCRUMBS -->
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <span>Use-Case</span>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <span> Automated Will Execution</span>
+                        </li>
+                    </ul>
+                    <!-- END PAGE BREADCRUMBS -->
+                    <!-- BEGIN PAGE CONTENT INNER -->
+                    <div class="page-content-inner">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="page-content-inner">
+                                <div class="portlet box red">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <i class="fa fa-gift"></i></div>
+                                        <div class="tools">
+                                            <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+
+                                        <div class="portlet light " id="willview">
+                                            <div class="portlet-title">
+                                                <div class="caption font-black">
+                                                    <h4 class="form-section"> Will </h4>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <form class="form-horizontal" role="form">
+
+                                                    <div class="form-body">
+                                                        <div class="form-group">
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Will Contract</label>
+                                                                <div class="col-md-6">
+                                                                    <p class="form-control-static" id="willviewWaddr"> </p>
+                                                                </div>
+                                                                <label class="col-md-6 control-label">Master Contract</label>
+                                                                <div class="col-md-6">
+                                                                    <p class="form-control-static" id="willviewMaddr"> </p>
+                                                                </div>
+                                                                <label class="col-md-6 control-label">Entity Contract</label>
+                                                                <div class="col-md-6">
+                                                                    <p class="form-control-static" id="willviewEaddr"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Status</label>
+                                                                <div class="col-md-6">
+                                                                    <p class="form-control-static" id="willviewstatus"> </p>
+                                                                </div>
+                                                                <label class="col-md-6 control-label">Will Status</label>
+                                                                <div class="col-md-6">
+                                                                    <p class="form-control-static" id="willviewwillstate"> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-6">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption font-black">
+                                                                        <h4 class="form-section"> List of Asset </h4>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th> # </th>
+                                                                                <th> Asset Name </th>
+                                                                                <th> Asset Details </th>
+                                                                                <th> Update Asset </th>
+                                                                                <th> Revoke Asset </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="willviewassetlist">
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="form-actions noborder">
+                                                                    <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdasset">Add New Asset</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption font-black">
+                                                                        <h4 class="form-section"> List of Bene </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table table-hover table-light">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th> # </th>
+                                                                                <th> Benefactor </th>
+                                                                                <th> Details </th>
+                                                                                <th> Revoke </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="willviewbenelist">
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="form-actions noborder">
+                                                                    <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdbene">Add New Bene</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption font-black">
+                                                                        <h4 class="form-section"> List of Bene </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table table-hover table-light">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th> # </th>
+                                                                                <th> Asset ID </th>
+                                                                                <th> Asset Name </th>
+                                                                                <th> Bene ID </th>
+                                                                                <th> Bene Address </th>
+                                                                                <th> UnAllocate </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="willviewassetalloc">
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="form-actions noborder">
+                                                                    <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdalloc">Add New Allocation</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Complete Allocation</label>
+                                                                <button type="button" class="btn btn-circle green btn-outline">Complete allocation</button>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Un-complete Allocation </label>
+                                                                <button type="button" class="btn btn-circle red btn-outline">UnComplete allocation</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Declare dead</label>
+                                                                <button type="button" class="btn btn-circle red btn-outline">Declare Dead</button>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="col-md-6 control-label">Disburse assets</label>
+                                                                <button type="button" class="btn btn-circle green btn-outline">Disburse</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="portlet light " id="willsearch">
+                                            <div class="portlet-title">
+                                                <div class="caption font-black">
+                                                    <h4 class="form-section">Search Will </h4>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <form role="form">
+                                                    <div class="form-body">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                                                    <select class="form-control edited globalidentiyselect" id="willsearchidentity">
+                                                                        <option value="" selected></option>
+                                                                    </select>
+                                                                    <label for="form_control_1">Identities</label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/span-->
+                                                            <div class="col-md-4">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <input type="text" class="form-control" id="willsearchid">
+                                                                    <label for="form_control_1">ID</label>
+                                                                    <span class="help-block">ID of the user</span>
+                                                                </div>
+                                                            </div>
+                                                            <!--/span-->
+                                                            <div class="col-md-4">
+                                                                <div class="form-actions noborder">
+                                                                    <button type="button" class="btn btn-circle green btn-outline" id="willsearchsubmit">Search </button>
+                                                                </div>
+                                                            </div>
+                                                            <!--/span-->
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="portlet light " id="willinit">
+                                            <div class="portlet-title">
+                                                <div class="caption font-black">
+                                                    <h4 class="form-section"> Will not exisiting in system</h4>
+                                                </div>
+                                            </div>
+                                            </br>
+                                            <div class="form-actions noborder">
+                                                <button type="button" class="btn btn-circle green btn-outline " id="willinitcreate">Create New Will</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PAGE CONTENT INNER -->
+                    </div>
+                </div>
+                <!-- END PAGE CONTENT BODY -->
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <!-- BEGIN INNER FOOTER -->
+        <div class="page-footer">
+            <div class="container"> 2016 &copy; by
+                <a href="http://algorythmix.in" target="_blank">
+                Algorythmix Tech Pvt Ltd.
+              </a>
+            </div>
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+        <!-- END INNER FOOTER -->
+        <!-- END FOOTER -->
+        <!--[if lt IE 9]>
+<script src="./assets/global/plugins/respond.min.js"></script>
+<script src="./assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="./assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="./assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <!-- <script src="./assets/pages/scripts/header.js" type="text/javascript"></script> -->
+        <script src="./assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="./assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="./assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="./assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+
+</html>

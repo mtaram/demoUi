@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AIA Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+  <!-- END GLOBAL MANDATORY STYLES -->
+  <!-- BEGIN PAGE LEVEL PLUGINS -->
+  <link href="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+  <!-- END PAGE LEVEL PLUGINS -->
+  <!-- BEGIN THEME GLOBAL STYLES -->
+  <link href="./assets/global/css/components-md.css" rel="stylesheet" id="style_components" type="text/css" />
+  <link href="./assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+  <!-- END THEME GLOBAL STYLES -->
+  <!-- BEGIN THEME LAYOUT STYLES -->
+  <link href="./assets/layouts/layout3/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/layouts/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+  <link href="./assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+  <!-- END THEME LAYOUT STYLES -->
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body class="page-container-bg-solid page-md">
+  <!-- BEGIN HEADER -->
+  <div class="page-header">
+      <!-- BEGIN HEADER TOP -->
+      <div class="page-header-top">
+          <div class="container">
+              <!-- BEGIN LOGO -->
+              <div class="page-logo">
+                  <a href="index.html">
+                      <img src="./assets/aia-logo.png" alt="logo" height='70%' class="logo-default">
+                  </a>
+              </div>
+              <!-- END LOGO -->
+              <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+              <a href="javascript:;" class="menu-toggler"></a>
+              <!-- END RESPONSIVE MENU TOGGLER -->
+              <!-- BEGIN TOP NAVIGATION MENU -->
+              <div class="top-menu">
+                  <ul class="nav navbar-nav pull-right">
+                      <li class="droddown dropdown-separator">
+                          <span class="separator"></span>
+                      </li>
+                      <!-- BEGIN USER LOGIN DROPDOWN -->
+                      <li class=" dropdown-user dropdown-dark">
+                          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                              <span class="username username-hide-mobile" id="username"></span>
+                          </a>
+                      </li>
+                      <!-- END USER LOGIN DROPDOWN -->
+                      <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                      <li class=" dropdown-user dropdown-dark" id="header_task_bar">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" id="logout" data-close-others="true">
+                              <i class="icon-logout"></i>
+                          </a>
+                      </li>
+                      <!-- END QUICK SIDEBAR TOGGLER -->
+                  </ul>
+              </div>
+              <!-- END TOP NAVIGATION MENU -->
+          </div>
+      </div>
+      <!-- END HEADER TOP -->
+      <!-- BEGIN HEADER MENU -->
+      <div class="page-header-menu">
+          <div class="container">
+              <!-- BEGIN MEGA MENU -->
+              <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+              <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+              <div class="hor-menu  ">
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown">
+                          <a href="index.html"> Dashboard
+                                  <span class="arrow"></span>
+                              </a>
+                      </li>
+                  </ul>
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown active">
+                          <a href="operations-kyc.html"> Use Case(s)
+                                <span class="arrow"></span>
+                              </a>
+                          <ul class="dropdown-menu pull-left active">
+                              <li class=" ">
+                                  <a href="operations-kyc.html" class="nav-link">
+                                      <i class="icon-bar-chart"></i> KYC
+                                  </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="operations-wills.html" class="nav-link active">
+                                      <i class="icon-bar-chart"></i> Will Management
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown">
+                          <a href="consortia-overview.html"> Consortia Management
+                                <span class="arrow"></span>
+                              </a>
+                          <ul class="dropdown-menu pull-left">
+                              <li class=" active">
+                                  <a href="consortia-overview.html" class="nav-link ">
+                                      <i class="icon-bar-chart"></i> Overview
+                                  </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="consortia-sop.html" class="nav-link">
+                                      <i class="icon-bulb"></i> Consortia Management </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="consortia-Setting.html" class="nav-link  ">
+                                      <i class="icon-graph"></i> Settings
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+              <!-- END MEGA MENU -->
+          </div>
+      </div>
+      <!-- END HEADER MENU -->
+  </div>
+  <a href="create-will.html">
+  <button class="btn btn-circle blue btn-outline btn-lg col-sm-2" style="margin:50px 0px 0px 50px" id="willinitcreate"><span class="glyphicon glyphicon-plus-sign"></span> Create new will</button>
+  </a>
+  <div class="page-container">
+
+    <div class="page-content-wrapper">
+
+    <div class="portlet light " id="willsearch">
+          <h3 class="form-section">Search Will</h3>
+      <hr color="#000000" size="1"></hr>
+        <div class="portlet-body form">
+            <form role="form">
+                <div class="form-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                <select class="form-control edited globalidentiyselect" id="willsearchidentity">
+                                    <option value="" selected>Social security number</option>
+                                    <option value="" >Income tax number</option>
+                                </select>
+                                <label for="form_control_1">Identities</label>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-4">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input type="text" class="form-control" id="willsearchid">
+                                <label for="form_control_1">Id number</label>
+                                <span class="help-block">Enter user id</span>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-4">
+                            <div class="form-actions noborder">
+                                <button type="button" class="btn btn-circle green btn-outline" id="willsearchsubmit">Search </button>
+                                <button type="button" class="btn btn-circle blue btn-outline" id="willsearchsubmit">Show all </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Start table for search will -->
+    <div class="col-md-12">
+        <div class="portlet-title">
+            <div class="caption font-black">
+                <h4 class="form-section">Search results </h4>
+            </div>
+        </div>
+        <div class="table table-hover table-light">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> Entity ID </th>
+                        <th> Will ID </th>
+                        <th> Action </th>
+                        <th> Action </th>
+                    </tr>
+                </thead>
+                <tbody  >
+                  <tr>
+                      <th> 1 </th>
+                      <th> A1235 </th>
+                      <th> W13592 </th>
+                      <th> <button type="button" class="btn btn-square blue btn-outline">View</button></th>
+                      <th> <button type="button" class="btn btn-square red btn-outline">Modify</button> </th>
+                  </tr>
+                  <tr>
+                      <th> 2 </th>
+                      <th> A1255 </th>
+                      <th> W19512 </th>
+                      <th> <button type="button" class="btn btn-square blue btn-outline">View</button></th>
+                      <th> <button type="button" class="btn btn-square red btn-outline">Modify</button> </th>
+                  </tr>
+                  <tr>
+                      <th> 3 </th>
+                      <th> A1351 </th>
+                      <th> W17523 </th>
+                      <th> <button type="button" class="btn btn-square blue btn-outline">View</button></th>
+                      <th> <button type="button" class="btn btn-square red btn-outline">Modify</button> </th>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="create-will.html">
+        <button class="btn btn-circle blue btn-outline btn-lg col-sm-2" style="margin:50px 0px 0px 50px" id="willinitcreate"><span class="glyphicon glyphicon-plus-sign"></span> Create new will</button>
+        </a>
+    </div>
+  </div>
+</body>
+</html>

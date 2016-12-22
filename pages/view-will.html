@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AIA Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+  <!-- END GLOBAL MANDATORY STYLES -->
+  <!-- BEGIN PAGE LEVEL PLUGINS -->
+  <link href="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+  <!-- END PAGE LEVEL PLUGINS -->
+  <!-- BEGIN THEME GLOBAL STYLES -->
+  <link href="./assets/global/css/components-md.css" rel="stylesheet" id="style_components" type="text/css" />
+  <link href="./assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+  <!-- END THEME GLOBAL STYLES -->
+  <!-- BEGIN THEME LAYOUT STYLES -->
+  <link href="./assets/layouts/layout3/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/layouts/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+  <link href="./assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+  <!-- END THEME LAYOUT STYLES -->
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body class="page-container-bg-solid page-md" style="background:#ffffff;">
+  <div class="page-header">
+      <!-- BEGIN HEADER TOP -->
+      <div class="page-header-top">
+          <div class="container">
+              <!-- BEGIN LOGO -->
+              <div class="page-logo">
+                  <a href="index.html">
+                      <img src="./assets/aia-logo.png" alt="logo" height='70%' class="logo-default">
+                  </a>
+              </div>
+              <!-- END LOGO -->
+              <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+              <a href="javascript:;" class="menu-toggler"></a>
+              <!-- END RESPONSIVE MENU TOGGLER -->
+              <!-- BEGIN TOP NAVIGATION MENU -->
+              <div class="top-menu">
+                  <ul class="nav navbar-nav pull-right">
+                      <li class="droddown dropdown-separator">
+                          <span class="separator"></span>
+                      </li>
+                      <!-- BEGIN USER LOGIN DROPDOWN -->
+                      <li class=" dropdown-user dropdown-dark">
+                          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                              <span class="username username-hide-mobile" id="username"></span>
+                          </a>
+                      </li>
+                      <!-- END USER LOGIN DROPDOWN -->
+                      <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                      <li class=" dropdown-user dropdown-dark" id="header_task_bar">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" id="logout" data-close-others="true">
+                              <i class="icon-logout"></i>
+                          </a>
+                      </li>
+                      <!-- END QUICK SIDEBAR TOGGLER -->
+                  </ul>
+              </div>
+              <!-- END TOP NAVIGATION MENU -->
+          </div>
+      </div>
+      <!-- END HEADER TOP -->
+      <!-- BEGIN HEADER MENU -->
+      <div class="page-header-menu">
+          <div class="container">
+
+              <!-- BEGIN MEGA MENU -->
+              <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+              <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+              <div class="hor-menu  ">
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown">
+                          <a href="index.html"> Dashboard
+                                  <span class="arrow"></span>
+                              </a>
+                      </li>
+                  </ul>
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown active">
+                          <a href="operations-kyc.html"> Use Case(s)
+                                <span class="arrow"></span>
+                              </a>
+                          <ul class="dropdown-menu pull-left active">
+                              <li class=" ">
+                                  <a href="operations-kyc.html" class="nav-link">
+                                      <i class="icon-bar-chart"></i> KYC
+                                  </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="operations-wills.html" class="nav-link active">
+                                      <i class="icon-bar-chart"></i> Will Management
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul class="nav navbar-nav">
+                      <li class="menu-dropdown classic-menu-dropdown">
+                          <a href="consortia-overview.html"> Consortia Management
+                                <span class="arrow"></span>
+                              </a>
+                          <ul class="dropdown-menu pull-left">
+                              <li class=" active">
+                                  <a href="consortia-overview.html" class="nav-link ">
+                                      <i class="icon-bar-chart"></i> Overview
+                                  </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="consortia-sop.html" class="nav-link">
+                                      <i class="icon-bulb"></i> Consortia Management </a>
+                              </li>
+                              <li class=" ">
+                                  <a href="consortia-Setting.html" class="nav-link  ">
+                                      <i class="icon-graph"></i> Settings
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+              <!-- END MEGA MENU -->
+          </div>
+      </div>
+      <!-- end header menu -->
+  </div>
+
+  <div class="page-container">
+    <!-- main form -->
+    <div class="page-content-wrapper">
+      <div class="content">
+
+        <div class="col-md-12" style="padding-bottom:20px; ">
+          <h3>Will details</h3><br>
+          <span class="col-md-2">Will ID </span>
+          <span class="col-md-2">W1458134 </span>
+        <div class="col-md-12" ></div>
+          <span class="col-md-2">Will status</span>
+          <span class="col-md-2">Created</span>
+        </div>
+        <div style="padding-left:20px;">
+        <hr style = 'background-color:#cccccc; border-width:1px;  height:1px; lineheight:0; width:25%;' />
+        </div>
+        <div class="col-md-12" style="padding-bottom:20px;">
+          <h4>Testator details</h4>
+          <span class="col-md-2">Social security number</span>
+          <span class="col-md-2">SS18284572</span>
+        </div>
+        <div style="padding-left:20px;">
+        <hr style = 'background-color:#cccccc; border-width:1px;  height:1px; lineheight:0; width:25%;' />
+        </div>
+
+        <div class="col-md-12" style="padding-bottom:20px;">
+          <h4>Witness(s) details</h4>
+          <span class="col-md-2">Income tax number</span>
+          <span class="col-md-2">IT2355731</span>
+        </div>
+        <div style="padding-left:20px;">
+        <hr style = 'background-color:#cccccc; border-width:1px;  height:1px; lineheight:0; width:25%;' />
+        </div>
+       </div>
+      <div class="col-md-12" ><br></div>
+      <div class="" style="margin:50px 0px 0px 0px">
+          <div class="col-md-6">
+              <div class="portlet-title">
+                  <div class="caption font-black">
+                      <h4 class="form-section"> List of Asset(s) </h4>
+                  </div>
+              </div>
+
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th> # </th>
+                              <th> Asset Name </th>
+                              <th> Description </th>
+                              <th> Action </th>
+                              <th> Action </th>
+                          </tr>
+                      </thead>
+                      <tbody class="willviewassetlist">
+                        <tr>
+                            <th style="font-weight:normal;"> 1 </th>
+                            <th style="font-weight:normal;"> House </th>
+                            <th style="font-weight:normal;"> 3BHK in Dadar </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Update</button> </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Remove</button> </th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight:normal;"> 2 </th>
+                            <th style="font-weight:normal;"> Stock </th>
+                            <th style="font-weight:normal;"> 3000 shares in RIL </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Update</button> </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Remove</button> </th>
+
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="form-actions noborder">
+                  <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdasset">Add New Asset</button>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="portlet-title">
+                  <div class="caption font-black">
+                      <h4 class="form-section"> List of Beneficiary(s) </h4>
+                  </div>
+              </div>
+              <div class="table table-hover table-light">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> Beneficiary </th>
+                        <th> Relation </th>
+                        <th> Revoke </th>
+                    </tr>
+                    </thead>
+                      <tbody class="willviewbenelist">
+                        <tr>
+                            <th style="font-weight:normal;"> 1 </th>
+                            <th style="font-weight:normal;"> Utkarsh </th>
+                            <th style="font-weight:normal;"> Brother </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Revoke</button> </th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight:normal;"> 2 </th>
+                            <th style="font-weight:normal;"> Juzer </th>
+                            <th style="font-weight:normal;"> Friend </th>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Revoke</button> </th>                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="form-actions noborder">
+                  <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdbene">Add new beneficiary</button>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <div class="portlet-title">
+                  <div class="caption font-black">
+                      <h4 class="form-section"> Asset - Beneficiary Allocation </h4>
+                  </div>
+              </div>
+              <div class="table table-hover table-light">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th> # </th>
+                              <th> Asset Name </th>
+                              <th> Beneficiary UID </th>
+                              <th> Beneficiary id type </th>
+                              <th> Shares owned </th>
+                              <th> Unallocate </th>
+                          </tr>
+                      </thead>
+                      <tbody class="willviewassetalloc">
+                        <tr>
+                            <td> 1 </td>
+                            <td > Shares </td>
+                            <td > SS17364813 </td>
+                            <td style="font-weight:normal;"> Social security number</td>
+                            <td style="font-weight:normal;">  </td>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Unallocate</button> </th>                        </tr>
+                        <tr>
+                            <td style="font-weight:normal;"> 2 </td>
+                            <td style="font-weight:normal;"> House </td>
+                            <td style="font-weight:normal;"> SS17364813 </td>
+                            <td style="font-weight:normal;"> Social security number </td>
+                            <td style="font-weight:normal;">  </td>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Unallocate</button> </th>                        </tr>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:normal;"> 3 </td>
+                            <td style="font-weight:normal;"> Shares </td>
+                            <td style="font-weight:normal;"> IT18244 </td>
+                            <td style="font-weight:normal;"> Income tax id </td>
+                            <td style="font-weight:normal;"> </td>
+                            <th style="font-weight:normal;"> <button type="button" class="btn btn-square blue btn-outline">Unallocate</button> </th>                        </tr>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="form-actions noborder">
+                  <button type="button" class="btn btn-circle green btn-outline " data-toggle="modal" href="#modaladdalloc">Allocate asset</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6" style="margin:70px 0px 0px 20px">
+          <div class="col-md-6">
+              <div class="form-group form-md-line-input form-md-floating-label has-info">
+                  <select class="form-control edited globalidentiyselect" id="willsearchidentity">
+                      <option value="" selected>Testator deceased</option>
+                      <option value="" >Assets disbursed</option>
+                  </select>
+                  <label for="form_control_1">Flag will</label>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group form-md-line-input form-md-floating-label">
+                  <input type="text" class="form-control" id="willsearchid" placeholder="Any comments">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-12" style="margin:75px 0px 110px 0px">
+          <div class="form-actions noborder">
+            <span class="col-md-1"></span>
+            <button type="button" class="col-md-2 btn btn-circle blue btn-outline" id="willsearchsubmit">Save changes</button>
+            <span class="col-md-1"></span>
+            <button type="button" class="col-md-2 btn btn-circle blue btn-outline" id="willsearchsubmit">Reset</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
