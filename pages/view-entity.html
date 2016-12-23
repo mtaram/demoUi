@@ -120,7 +120,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                         <li class="sub-menu ">
                             <li class="nav-item start ">
-                                <a href="#" class="nav-link ">
+                                <a href="search.html" class="nav-link ">
                                     <i class="fa fa-search"></i>
                                     <span class="title">Search Records</span>
                                 </a>
@@ -139,6 +139,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <span class="title">Dashboard</span>
                                 </a>
                             </li>
+                        </li>
+                        <li class="nav-item start ">
+                                <a href="entity-manager.html" class="nav-link ">
+                                    <i class="fa fa-users"></i>
+                                    <span class="title">Entity Manager</span>
+                                </a>
+                        </li>
+                        <li class="nav-item start ">
+                                <a href="view-entity.html" class="nav-link ">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="title">View Entity</span>
+                                </a>
                         </li>
                         <li class="nav-item start ">
                                 <a href="#" class="nav-link ">
@@ -190,8 +202,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="page-content">
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> Entities
-                        <small>Manager</small>
+                    <h3 class="page-title"> View
+                        <small>Owned Entity Records</small>
                     </h3>
                     <div class="portlet light form-fit bordered">
                         <div class="portlet-title">
@@ -212,12 +224,15 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="col-md-12">
                             <hr>
                             </div>
+                            <div class="col-md-12" style="padding:0px 0px 15px 20px;">
+                              <span><h4>Searched for {searched identity}</h4></span>
+                            </div>
                             <div class="col-md-12">
                               <div class="portlet box blue">
                         <!-- Begin search results-->
-                                <div class="portlet-title">
+                              <div class="portlet-title">
                                     <div class="caption">
-                                        <i class="fa fa-list"></i>Documents Pending KYC Verification</div>
+                                        <i class="fa fa-list"></i>Documents available for {searched entity}</div>
                                     <div class="tools">
                                         <a href="javascript:;" class="collapse"> </a>
                                         <a href="javascript:;" class="reload"> </a>
@@ -229,12 +244,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <thead>
                                                 <tr>
                                                     <th> # </th>
-                                                    <th> ID Type </th>
+                                                    <th> ID type </th>
                                                     <th> ID Number </th>
-                                                    <th> Document Uploaded </th>
-                                                  <!--  <th> KYC Status </th> -->
-                                                    <th> Flag </th>
-                                                    <th> Action </th>
+                                                    <th> Valid upto </th>
+                                                    <th> Download link </th>
+                                                    <!--<th> Owned/Shared </th>-->
+                                                    <!--<th> Action </th>-->
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -242,37 +257,47 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     <td> 1 </td>
                                                     <td> PAN Card </td>
                                                     <td> AAAAA9999N </td>
-                                                    <td> <a href="ipfs"> PAN Card </a></td>
-                                                <!--      <td> Pending </td> -->
-                                                    <td>  <u>flag</u> </td>
-                                                    <td> <u>Verify</u> </td>
+                                                    <td> - </td>
+                                                    <td> <a href="ipfs://ip/hash">Download</a> </td>
+                                                    <!--<td> Owned </td>-->
+                                                    <!--<td> <u>Veiw</u> / <u>Fetch</u> </td>-->
                                                 </tr>
                                                 <tr>
                                                     <td> 2 </td>
                                                     <td> Aadhaar </td>
                                                     <td> 4499494949 </td>
-                                                    <td> <a href="ipfs"> Aadhar Card </a></td>
-                                                <!--      <td> Pending </td> -->
-                                                    <td> <u>flag</u> </td>
-                                                    <td> <u>Verify</u> </td>
+                                                    <td> - </td>
+                                                    <td> <a href="ipfs://ip/hash">Download
+                                                    </a> </td>
+                                                    <!--<td> Owned </td>-->
+                                                    <!--<td> <u>Veiw</u> / <u>Fetch</u> </td>-->
                                                 </tr>
                                                 <tr>
                                                     <td> 3 </td>
                                                     <td> Passport </td>
                                                     <td> E1234567890 </td>
-                                                    <td> <a href="ipfs"> Passport </a></td>
-                                                <!--      <td> Pending </td> -->
-                                                    <td> <u>flag</u> </td>
-                                                    <td> <u>Verify</u> </td>
+                                                    <td> 23/12/2020 </td>
+                                                    <td> <a href="ipfs://ip/hash">Download</a> </td>
+                                                    <!--<td> Shared </td>-->
+                                                    <!--<td> <u>Veiw</u> / <u>Fetch</u> </td>-->
                                                 </tr>
                                                 <tr>
-                                                    <td> 4 </td>
-                                                    <td> PAN Card </td>
-                                                    <td> QWSDC9000B </td>
-                                                    <td> <a href="#responsive"> PAN Card </a></td>
-                                                <!--      <td> Pending </td> -->
-                                                    <td> <u>flag</u> </td>
-                                                    <td> <u>Verify</u> </td>
+                                                    <td> 3 </td>
+                                                    <td> Address </td>
+                                                    <td> Utility Bill </td>
+                                                    <td> - </td>
+                                                    <td> <a href="ipfs://ip/hash">Download</a> </td>
+                                                    <!--<td> Shared </td>-->
+                                                    <!--<td> <u>Veiw</u> / <u>Fetch</u> </td>-->
+                                                </tr>
+                                                <tr>
+                                                    <td> 3 </td>
+                                                    <td> Address </td>
+                                                    <td> Bank Statement </td>
+                                                    <td> - </td>
+                                                    <td> <a href="ipfs://ip/hash">Download</a> </td>
+                                                    <!--<td> Shared </td>-->
+                                                    <!--<td> <u>Veiw</u> / <u>Fetch</u> </td>-->
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -280,10 +305,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </div>
                             </div>
                             <!-- END search result-->
-                            <div class="col-md-12 form-body">
+                            <!--<div class="col-md-12 form-body">-->
                               <!--<button type="button" class="btn btn-primary"><i class="fa fa-plus-square fa-fw fa-lg"></i>  </button>-->
-                            <a class="btn btn-primary" data-toggle="modal" href="#responsive"><i class="fa fa-plus-square fa-fw fa-lg"></i> Add document </a>
-                            <div>
+                            <!--<a class="btn btn-primary" data-toggle="modal" href="#responsive"><i class="fa fa-plus-square fa-fw fa-lg"></i> Add document </a>
+                            <div>-->
 
                               <div id="responsive" class="modal fade" tabindex="-1" aria-hidden="true">
                                   <div class="modal-dialog">

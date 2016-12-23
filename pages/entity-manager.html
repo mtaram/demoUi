@@ -73,7 +73,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <ul class="dropdown-menu dropdown-menu-default">
                         <li>
                             <a href="page_user_profile_1.html">
-                                <i class="icon-user"></i> {Last Login time} </a>
+                                <i class="icon-user"></i> Last Login time </a>
                         </li>
                         <li>
                             <a href="#">
@@ -202,8 +202,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="page-content">
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> Search
-                        <small>Entity Records</small>
+                    <h3 class="page-title"> Entities
+                        <small>Manager</small>
                     </h3>
                     <div class="portlet light form-fit bordered">
                         <div class="portlet-title">
@@ -227,9 +227,9 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="col-md-12">
                               <div class="portlet box blue">
                         <!-- Begin search results-->
-                              <div class="portlet-title">
+                                <div class="portlet-title">
                                     <div class="caption">
-                                        <i class="fa fa-list"></i>Documents available for {searched entity}</div>
+                                        <i class="fa fa-list"></i>Documents Pending KYC Verification</div>
                                     <div class="tools">
                                         <a href="javascript:;" class="collapse"> </a>
                                         <a href="javascript:;" class="reload"> </a>
@@ -241,11 +241,11 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <thead>
                                                 <tr>
                                                     <th> # </th>
-                                                    <th> Document </th>
+                                                    <th> ID Type </th>
                                                     <th> ID Number </th>
-                                                    <th> Valid upto </th>
-                                                    <th> KYC Status </th>
-                                                    <th> Owned/Shared </th>
+                                                    <th> Document Uploaded </th>
+                                                  <!--  <th> KYC Status </th> -->
+                                                    <th> Flag </th>
                                                     <th> Action </th>
                                                 </tr>
                                             </thead>
@@ -254,31 +254,86 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     <td> 1 </td>
                                                     <td> PAN Card </td>
                                                     <td> AAAAA9999N </td>
-                                                    <td> - </td>
-                                                    <td> Done </td>
-                                                    <td> Owned </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
+                                                    <td> <a data-toggle="modal" href="#basic"> PAN Card </a></td>
+                                                <!--      <td> Pending </td> -->
+                                                    <td>  <a data-toggle="modal" href="#basic-flag"><u>flag</u> </td>
+                                                    <td> <u>Verify</u> </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 2 </td>
                                                     <td> Aadhaar </td>
                                                     <td> 4499494949 </td>
-                                                    <td> - </td>
-                                                    <td> Pending </td>
-                                                    <td> Owned </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
+                                                    <td> <a data-toggle="modal" href="#basic"> Aadhar Card </a></td>
+                                                <!--      <td> Pending </td> -->
+                                                    <td> <a data-toggle="modal" href="#basic-flag"><u>flag</u> </td>
+                                                    <td> <u>Verify</u> </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 3 </td>
                                                     <td> Passport </td>
                                                     <td> E1234567890 </td>
-                                                    <td> 23/12/2020 </td>
-                                                    <td> Done </td>
-                                                    <td> Shared </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
+                                                    <td> <a data-toggle="modal" href="#basic"> Passport </a></td>
+                                                <!--      <td> Pending </td> -->
+                                                    <td> <a data-toggle="modal" href="#basic-flag"><u>flag</u> </td>
+                                                    <td> <u>Verify</u> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 4 </td>
+                                                    <td> PAN Card </td>
+                                                    <td> QWSDC9000B </td>
+                                                    <td> <a data-toggle="modal" href="#basic"> PAN Card </a></td>
+                                                <!--      <td> Pending </td> -->
+                                                    <td> <a data-toggle="modal" href="#basic-flag"><u>flag</u> </td>
+                                                    <td> <u>Verify</u> </td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                    </div>
+                                    <div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Fetching document</h4>
+                                                </div>
+                                                <div class="col-md-12" style="padding:20px 0px 0px 20px;">
+                                                <span class="help-block">The document being fetched costs {credits}. Enter password or OTP to continue...</span>
+                                                </div>
+                                                <div class="col-md-12" style="padding:20px 0px 20px 180px;">
+                                                      <input type="text" class="form-control input-medium" placeholder="Password or OTP">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Fetch</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+                                    <div class="modal fade" id="basic-flag" tabindex="-1" role="basic" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Flag Document</h4>
+                                                </div>
+                                                <!--<div class="modal-body"> Enter password or OTP </div>-->
+                                                <div class="col-md-12" style="padding:20px 0px 20px 140px;">
+                                                  <select class="bs-select form-control" style="width: 320px">
+                                                      <option>AML Flag</option>
+                                                      <option>{Flag 2}}</option>
+                                                      <option>{Flag 3}}</option>
+                                                  </select>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Flag Entity</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
                                     </div>
                                 </div>
                             </div>
