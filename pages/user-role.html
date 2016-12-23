@@ -153,6 +153,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </a>
                         </li>
                         <li class="nav-item start ">
+                                <a href="add-entity.html" class="nav-link ">
+                                    <i class="fa fa-plus"></i>
+                                    <span class="title">Add Entity</span>
+                                </a>
+                        </li>
+                        <li class="nav-item start ">
                                 <a href="#" class="nav-link ">
                                     <i class="fa fa-history"></i>
                                     <span class="title">Transaction History</span>
@@ -202,148 +208,44 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="page-content">
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> Search
-                        <small>Entity Records</small>
+                    <h3 class="page-title"> User
+                        <small>Role Management</small>
                     </h3>
                     <div class="portlet light form-fit bordered">
                         <div class="portlet-title">
                           <div class="col-md-12 form-body">
-                            <div class="col-md-4">
-                                  <input type="text" class="form-control input-large" placeholder="Search">
-                            </div>
-                            <div class="col-md-3">
-                                  <select class="bs-select form-control">
-                                      <option>Aadhaar</option>
-                                      <option>Permanent Account Number</option>
-                                      <option>Passport</option>
-                                  </select>
-                            </div>
-                            <div class="col-md-3">
-                            <button type="button" class="btn btn-primary">Search</button>
-                            </div>
-                            <div class="col-md-12">
-                            <hr>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="portlet box blue">
-                        <!-- Begin search results-->
-                              <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class="fa fa-list"></i>Documents available for {searched entity}</div>
-                                    <div class="tools">
-                                        <a href="javascript:;" class="collapse"> </a>
-                                        <a href="javascript:;" class="reload"> </a>
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th> # </th>
-                                                    <th> Document </th>
-                                                    <th> ID Number </th>
-                                                    <th> Valid upto </th>
-                                                    <th> KYC Status </th>
-                                                    <th> Owned/Shared </th>
-                                                    <th> Action </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td> 1 </td>
-                                                    <td> PAN Card </td>
-                                                    <td> AAAAA9999N </td>
-                                                    <td> - </td>
-                                                    <td> Done </td>
-                                                    <td> Owned </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 2 </td>
-                                                    <td> Aadhaar </td>
-                                                    <td> 4499494949 </td>
-                                                    <td> - </td>
-                                                    <td> Pending </td>
-                                                    <td> Owned </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 3 </td>
-                                                    <td> Passport </td>
-                                                    <td> E1234567890 </td>
-                                                    <td> 23/12/2020 </td>
-                                                    <td> Done </td>
-                                                    <td> Shared </td>
-                                                    <td> <u>Veiw</u> / <u>Fetch</u> </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END search result-->
-                            <div class="col-md-12 form-body">
-                              <!--<button type="button" class="btn btn-primary"><i class="fa fa-plus-square fa-fw fa-lg"></i>  </button>-->
-                            <a class="btn btn-primary" data-toggle="modal" href="#responsive"><i class="fa fa-plus-square fa-fw fa-lg"></i> Add document </a>
-                            <div>
-
-                              <div id="responsive" class="modal fade" tabindex="-1" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                      <div class="modal-content">
-                                          <div class="modal-header">
-                                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                              <h4 class="modal-title">Add new document</h4>
-                                          </div>
-                                          <div class="modal-body">
-                                                        <div class="scroller" style="height:520px;" data-always-visible="1" data-rail-visible1="1">
-                                                                <div class="col-md-12">
-                                                                      <div class="col-md-6" style="padding:0px 0px 5px 105px;">
-                                                                        <span class="help-block">Document Type</span>
-                                                                            <select class="bs-select form-control" style="width: 320px">
-                                                                                <option>Aadhaar</option>
-                                                                                <option>Permanent Account Number</option>
-                                                                                <option>Passport</option>
-                                                                            </select>
-                                                                      </div>
-                                                                </div>
-                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
-                                                                      <span class="help-block"> Document Id </span>
-                                                                      <input type="text" class="form-control input-large" placeholder="Document ID">
-                                                                </div>
-                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
-                                                                    <span class="help-block"> Valid since </span>
-                                                                    <input class="form-control form-control-inline input-large date-picker" size="12" type="text" value="" />
-                                                                </div>
-                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
-                                                                    <span class="help-block"> Valid upto </span>
-                                                                    <input class="form-control form-control-inline input-large date-picker" size="12" type="text" value="" />
-                                                                </div>
-                                                                <div class="col-md-12" style="padding:0px 0px 5px 120px;">
-                                                                      <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                      <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 320px; height: 150px;"> </div>
-                                                                          <span class="btn blue btn-file">
-                                                                              <span class="fileinput-new"> Select file </span>
-                                                                              <span class="fileinput-exists"> Change </span>
-                                                                              <input type="file" name="..."> </span>
-                                                                          <span class="fileinput-filename"> </span> &nbsp;
-                                                                          <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
-                                                                      </div>
-                                                                </div>
-                                            </div>
-                                          </div>
-                                          <div class="modal-footer">
-                                              <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>
-                                              <button type="button" class="btn btn-primary">Add Document</button>
-                                          </div>
-                                      </div>
-                                  </div>
+                              <div class="col-md-4">
+                                    <input type="text" class="form-control input-large" placeholder="User Name">
+                              </div>
+                              <div class="col-md-3">
+                              <button type="button" class="btn btn-primary">Search</button>
+                              </div>
+                              <div class="col-md-12">
+                              <hr>
                               </div>
 
+
+                            <div class="col-md-4">
+                              <span class="help-block"> {userName}</span>
                             </div>
+                            <div class="col-md-6" style="padding:0px 0px 5px 40px;">
+                                  <div class="col-md-6">
+                                        <select class="bs-select form-control">
+                                            <option>Teller</option>
+                                            <option>Compliance</option>
+                                            <option>Admin</option>
+                                        </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-4" style="padding:10px 0px 5px 0px; align:right;">
+                             <button type="button" class="btn btn-primary">Update User Role</button>
+                            </div>
+
                           </div>
-                        </div>
-                     </div>
                     </div>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
