@@ -55,9 +55,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="page-logo">
                     <a href="index.html">
                         <img src="cetaslogowhite.png" height="36" alt="logo" class="logo-default" /> </a>
-                    <div class="menu-toggler sidebar-toggler">
-                        <span></span>
-                    </div>
+
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN USER LOGIN DROPDOWN -->
@@ -204,220 +202,183 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- END SIDEBAR -->
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
-                <!-- BEGIN CONTENT BODY -->
-                <div class="page-content">
-                    <!-- BEGIN PAGE HEADER-->
-                    <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> User
-                        <small>Add User</small>
-                    </h3>
-                    <div class="portlet light form-fit bordered">
-                        <div class="portlet-title">
-                          <div class="col-md-12 form-body">
-                            <div class="col-md-12" style="padding:0px 0px 20px 20px;">
-                              <span class="help-block"> User Name </span>
-                              <input type="text" class="form-control input-large" placeholder="User Name">
-                            </div>
-                            <div class="col-md-12" style="padding:0px 0px 20px 20px;">
-                                  <span class="help-block"> Email Address </span>
-                                  <input type="text" class="form-control input-large" placeholder="Email Address">
-                            </div>
-                            <div class="col-md-12" >
-                            </div>
-                            <div class="col-md-12" style="padding:0px 0px 20px 20px;">
-                              <span class="help-block"> Password </span>
-                              <input type="text" class="form-control input-large" placeholder="Password">
-                            </div>
-                            <div class="col-md-12" style="padding:0px 0px 20px 20px;">
-                                  <span class="help-block"> Confirm Password </span>
-                                  <input type="text" class="form-control input-large" placeholder="Confirm Password">
-                            </div>
-                            <div class="col-md-12">
-                            </div>
-                            <div class="col-md-12" >
-                            </div>
-                            <div class="col-md-12" style="padding:10px 0px 5px 250px; align:right;">
-                             <button type="button" class="btn btn-primary">Add User</button>
-                            </div>
+              <!-- BEGIN CONTENT -->
+              <div class="page-content-wrapper">
+                  <!-- BEGIN CONTENT BODY -->
+                  <div class="page-content">
+                      <!-- BEGIN PAGE HEADER-->
+                      <!-- BEGIN PAGE TITLE-->
+                      <h3 class="page-title"> User
+                          <small>Management</small>
+                      </h3>
+                      <!-- END PAGE TITLE-->
+                      <!-- END PAGE HEADER-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                              <div class="portlet light portlet-fit bordered">
 
-                          </div>
-
-                          <div class="col-md-12" style="padding:10px 0px 50px 0px; align:right;">
-                            <span class="help-block"> Loading samples </span>
-                            <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
-                            <hr>
-                            <i class="fa fa-spinner fa-spin" style="font-size:48px"></i>
-                            <hr>
-                            <a class=" btn yellow btn-outline sbold" href="modals-ajax-sample.html" data-target="#ajax" data-toggle="modal"> View Demo </a>
-
-                          </div>
-                    </div>
-                    <div class="portlet light portlet-fit bordered">
-                        <div class="portlet-title">
-                            <div class="caption">
-                                <i class="icon-settings font-red"></i>
-                                <span class="caption-subject font-red sbold uppercase">Editable Table</span>
-                            </div>
-                            <div class="actions">
-                                <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm active">
-                                        <input type="radio" name="options" class="toggle" id="option1">Actions</label>
-                                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm">
-                                        <input type="radio" name="options" class="toggle" id="option2">Settings</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portlet-body">
-                            <div class="table-toolbar">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="btn-group">
-                                            <button id="sample_editable_1_new" class="btn green"> Add New
-                                                <i class="fa fa-plus"></i>
-                                            </button>
+                                  <div class="portlet-body">
+                                      <div class="table-toolbar">
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <div class="btn-group">
+                                                      <button id="sample_editable_1_new" class="btn btn-primary"><i class="fa fa-plus"></i>Add New
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                              <!--<div class="col-md-6">
+                                                  <div class="btn-group pull-right">
+                                                      <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+                                                          <i class="fa fa-angle-down"></i>
+                                                      </button>
+                                                      <ul class="dropdown-menu pull-right">
+                                                          <li>
+                                                              <a href="javascript:;"> Print </a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="javascript:;"> Save as PDF </a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="javascript:;"> Export to Excel </a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                              </div>-->
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-10">
+                                          <div id="sample_editable_1_filter" class="dataTables_filter">
+                                            <label>Search <input type="search" class="form-control input-medium input-small input-inline" placeholder="" aria-controls="sample_editable_1"></label>
+                                          </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="btn-group pull-right">
-                                            <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
-                                                <i class="fa fa-angle-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right">
-                                                <li>
-                                                    <a href="javascript:;"> Print </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;"> Save as PDF </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;"> Export to Excel </a>
-                                                </li>
-                                            </ul>
+                                        <div class="col-md-2 pull-right">
+                                          <div class="dataTables_length" id="sample_editable_1_length">
+                                            <label>
+                                              <select name="sample_editable_1_length" aria-controls="sample_editable_1" class="form-control input-sm input-xsmall input-inline">
+                                                <option value="5">5</option><option value="15">15</option>
+                                                <option value="20">20</option><option value="-1">All</option>
+                                              </select>records</label>
+                                          </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
-                                <thead>
-                                    <tr>
-                                        <th> Username </th>
-                                        <th> Full Name </th>
-                                        <th> Points </th>
-                                        <th> Notes </th>
-                                        <th> Edit </th>
-                                        <th> Delete </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> alex </td>
-                                        <td> Alex Nilson </td>
-                                        <td> 1234 </td>
-                                        <td class="center"> power user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> lisa </td>
-                                        <td> Lisa Wong </td>
-                                        <td> 434 </td>
-                                        <td class="center"> new user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> nick12 </td>
-                                        <td> Nick Roberts </td>
-                                        <td> 232 </td>
-                                        <td class="center"> power user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> goldweb </td>
-                                        <td> Sergio Jackson </td>
-                                        <td> 132 </td>
-                                        <td class="center"> elite user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> alex </td>
-                                        <td> Alex Nilson </td>
-                                        <td> 1234 </td>
-                                        <td class="center"> power user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> webriver </td>
-                                        <td> Antonio Sanches </td>
-                                        <td> 462 </td>
-                                        <td class="center"> new user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> gist124 </td>
-                                        <td> Nick Roberts </td>
-                                        <td> 62 </td>
-                                        <td class="center"> new user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> alex </td>
-                                        <td> Alex Nilson </td>
-                                        <td> 1234 </td>
-                                        <td class="center"> power user </td>
-                                        <td>
-                                            <a class="edit" href="javascript:;"> Edit </a>
-                                        </td>
-                                        <td>
-                                            <a class="delete" href="javascript:;"> Delete </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- END EXAMPLE TABLE PORTLET-->
-                </div>
-                    <!-- END PAGE TITLE-->
-                    <!-- END PAGE HEADER-->
-                    <!--<div class="note note-info">
-                        <p> A black page template with a minimal dependency assets to use as a base for any custom page you create </p>
-                    </div>-->
-                </div>
-                <!-- END CONTENT BODY -->
+                                      </div>
+                                      <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                                          <thead>
+                                              <tr>
+                                                  <th> Username </th>
+                                                  <th> Full Name </th>
+                                                  <th> Points </th>
+                                                  <th> Notes </th>
+                                                  <th> Edit </th>
+                                                  <th> Delete </th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td> alex </td>
+                                                  <td> Alex Nilson </td>
+                                                  <td> 1234 </td>
+                                                  <td class="center"> power user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> lisa </td>
+                                                  <td> Lisa Wong </td>
+                                                  <td> 434 </td>
+                                                  <td class="center"> new user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> nick12 </td>
+                                                  <td> Nick Roberts </td>
+                                                  <td> 232 </td>
+                                                  <td class="center"> power user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> goldweb </td>
+                                                  <td> Sergio Jackson </td>
+                                                  <td> 132 </td>
+                                                  <td class="center"> elite user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> alex </td>
+                                                  <td> Alex Nilson </td>
+                                                  <td> 1234 </td>
+                                                  <td class="center"> power user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> webriver </td>
+                                                  <td> Antonio Sanches </td>
+                                                  <td> 462 </td>
+                                                  <td class="center"> new user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> gist124 </td>
+                                                  <td> Nick Roberts </td>
+                                                  <td> 62 </td>
+                                                  <td class="center"> new user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td> alex </td>
+                                                  <td> Alex Nilson </td>
+                                                  <td> 1234 </td>
+                                                  <td class="center"> power user </td>
+                                                  <td>
+                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                  </td>
+                                                  <td>
+                                                      <a class="delete" href="javascript:;"> Delete </a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                              <!-- END EXAMPLE TABLE PORTLET-->
+                          </div>
+                      </div>
+                  </div>
             </div>
             <!-- END CONTENT -->
 
