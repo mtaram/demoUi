@@ -281,7 +281,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 1234 </td>
                                                   <td class="center"> power user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -293,7 +293,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 434 </td>
                                                   <td class="center"> new user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -305,7 +305,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 232 </td>
                                                   <td class="center"> power user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -317,7 +317,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 132 </td>
                                                   <td class="center"> elite user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -329,7 +329,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 1234 </td>
                                                   <td class="center"> power user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -341,7 +341,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 462 </td>
                                                   <td class="center"> new user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -353,7 +353,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 62 </td>
                                                   <td class="center"> new user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -365,7 +365,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                   <td> 1234 </td>
                                                   <td class="center"> power user </td>
                                                   <td>
-                                                      <a class="edit" href="javascript:;"> Edit </a>
+                                                      <a class="edit" data-toggle="modal" href="#responsive"> Edit </a>
                                                   </td>
                                                   <td>
                                                       <a class="delete" href="javascript:;"> Delete </a>
@@ -373,6 +373,40 @@ License: You must have a valid license purchased only from themeforest(the above
                                               </tr>
                                           </tbody>
                                       </table>
+                                      <div id="responsive" class="modal fade" tabindex="-1" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                      <h3 class="modal-title">Change Role</h3>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div class="scroller" style="height:100px;" data-always-visible="1" data-rail-visible1="1">
+
+                                                                  <div class="col-md-12" style="padding:5px 0px 0px 180px;">
+                                                                    <span><h4>Current Role = {role}<h4></span>
+                                                                  </div>
+                                                                        <div class="col-md-6" style="padding:0px 0px 0px 140px;">
+                                                                              <span><h4>Assign Role<h4></span>
+                                                                        </div>
+                                                                          <div class="col-md-3" style="padding:5px 0px 200px 0px;">
+                                                                              <select class="bs-select form-control" style="width:140px;">
+                                                                                  <option>Teller</option>
+                                                                                  <option>Compliance</option>
+                                                                                  <option>Admin</option>
+                                                                              </select>
+                                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <div class="col-md-5 pull-right" style="padding:0px 20px 0px 0px;">
+                                                      <button type="button" class="btn btn-primary pull-left" style="width:80px;">Yes</button>
+                                                      <button type="button" data-dismiss="modal" class="btn dark btn-outline" style="width:80px;">No</button>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
                               </div>
                               <!-- END EXAMPLE TABLE PORTLET-->
